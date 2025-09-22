@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Catan_Gameserver - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDC.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Catan_Gameserver.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\source_code\Visual C++\2003_Summer\Catan_server\Game_server\Catan_Gameserver\Catan_Gameserver.cpp"
+"C:\source_code\Visual C++\2003_Summer\Catan_server\Game_server\Catan_Gameserver\Message.cpp"
+"C:\source_code\Visual C++\2003_Summer\Catan_server\Game_server\Catan_Gameserver\ServerWork.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDC.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDD.tmp" with contents
+[
+Ws2_32.lib odbc32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Catan_Gameserver.pdb" /debug /machine:I386 /out:"Debug/Catan_Gameserver.exe" /pdbtype:sept 
+".\Debug\Catan_Gameserver.obj"
+".\Debug\Catan_GameserverDlg.obj"
+".\Debug\cConsol.obj"
+".\Debug\ChannelManager.obj"
+".\Debug\ClientManager.obj"
+".\Debug\DataBase.obj"
+".\Debug\LogDialog.obj"
+".\Debug\Message.obj"
+".\Debug\ServerWork.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TrayIcon.obj"
+".\Debug\WSASocket.obj"
+".\Debug\Catan_Gameserver.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDD.tmp"
+<h3>Output Window</h3>
+Compiling...
+Catan_Gameserver.cpp
+Message.cpp
+ServerWork.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDE.tmp" with contents
+[
+/nologo /o"Debug/Catan_Gameserver.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\Catan_Gameserver.sbr"
+".\Debug\Catan_GameserverDlg.sbr"
+".\Debug\cConsol.sbr"
+".\Debug\ChannelManager.sbr"
+".\Debug\ClientManager.sbr"
+".\Debug\DataBase.sbr"
+".\Debug\LogDialog.sbr"
+".\Debug\Message.sbr"
+".\Debug\ServerWork.sbr"
+".\Debug\TrayIcon.sbr"
+".\Debug\WSASocket.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDE.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Catan_Gameserver.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,20 @@
+; StartComp INF file for StarterComp.DLL
+[version]
+signature-"$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+StarterComp.dll=StarterComp.dll
+atl.dll=atl.dll
+
+[atl.dll]
+file-win32-x86=thiscab
+FileVersion=2,00,0,7024
+DestDir=11
+RegisterServer=yes
+
+[StarterComp.dll]
+file-win32-x86=thiscab
+clasid={BBE564F6-61BD-48D9-BEAE-97717A58C226}
+FileVersion=1,0,0,2
+RegisterServer=yes

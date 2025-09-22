@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 카탄 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/카탄.res" /d "NDEBUG" /d "_AFXDLL" "C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\카탄.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D1.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/카탄.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\BgSound.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\block_inf.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\CardStealDlg.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\CardUseDlg.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\Client.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\DropDlg.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\KatanPlay.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\link_type.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\ListenSocket.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\NoEditView.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\Player_Inf.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\ServerDlg.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\ServerSocket.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\TrainDlg.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\카탄.cpp"
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\카탄Dlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D1.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D2.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/카탄.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\source_code\Visual C++\2003_Summer\카탄프로젝트통합편\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D2.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D3.tmp" with contents
+[
+winmm.lib dsound.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/카탄.pdb" /machine:I386 /out:"Release/카탄.exe" 
+".\Release\BgSound.obj"
+".\Release\block_inf.obj"
+".\Release\CardStealDlg.obj"
+".\Release\CardUseDlg.obj"
+".\Release\Client.obj"
+".\Release\DropDlg.obj"
+".\Release\KatanPlay.obj"
+".\Release\link_type.obj"
+".\Release\ListenSocket.obj"
+".\Release\NoEditView.obj"
+".\Release\Player_Inf.obj"
+".\Release\ServerDlg.obj"
+".\Release\ServerSocket.obj"
+".\Release\StdAfx.obj"
+".\Release\TrainDlg.obj"
+".\Release\카탄.obj"
+".\Release\카탄Dlg.obj"
+".\Release\카탄.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BgSound.cpp
+block_inf.cpp
+CardStealDlg.cpp
+CardUseDlg.cpp
+Client.cpp
+DropDlg.cpp
+KatanPlay.cpp
+link_type.cpp
+ListenSocket.cpp
+NoEditView.cpp
+Player_Inf.cpp
+ServerDlg.cpp
+ServerSocket.cpp
+TrainDlg.cpp
+카탄.cpp
+카탄Dlg.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D5.tmp" with contents
+[
+/nologo /o"Release/카탄.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\BgSound.sbr"
+".\Release\block_inf.sbr"
+".\Release\CardStealDlg.sbr"
+".\Release\CardUseDlg.sbr"
+".\Release\Client.sbr"
+".\Release\DropDlg.sbr"
+".\Release\KatanPlay.sbr"
+".\Release\link_type.sbr"
+".\Release\ListenSocket.sbr"
+".\Release\NoEditView.sbr"
+".\Release\Player_Inf.sbr"
+".\Release\ServerDlg.sbr"
+".\Release\ServerSocket.sbr"
+".\Release\TrainDlg.sbr"
+".\Release\카탄.sbr"
+".\Release\카탄Dlg.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D5.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+카탄.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

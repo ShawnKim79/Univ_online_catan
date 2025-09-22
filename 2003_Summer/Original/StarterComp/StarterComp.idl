@@ -1,0 +1,53 @@
+// StarterComp.idl : IDL source for StarterComp.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (StarterComp.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(CAFCF4BC-6140-4C8C-81CA-1C5D5BFE867D),
+		dual,
+		helpstring("IStarterCtrl Interface"),
+		pointer_default(unique)
+	]
+	interface IStarterCtrl : IDispatch
+	{
+		[id(1), helpstring("method StartUpdater")] HRESULT StartUpdater(BSTR id, short type);
+	};
+
+[
+	uuid(8E363DA0-140D-4843-901D-1E25AD68E5F1),
+	version(1.0),
+	helpstring("StarterComp 1.0 Type Library")
+]
+library STARTERCOMPLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(AD00194D-2840-452E-BFF6-F7B11C776584),
+		helpstring("_IStarterCtrlEvents Interface")
+	]
+	dispinterface _IStarterCtrlEvents
+	{
+		properties:
+		methods:
+	};
+
+	[
+		uuid(BBE564F6-61BD-48D9-BEAE-97717A58C226),
+		helpstring("StarterCtrl Class")
+	]
+	coclass StarterCtrl
+	{
+		[default] interface IStarterCtrl;
+		[default, source] dispinterface _IStarterCtrlEvents;
+	};
+};

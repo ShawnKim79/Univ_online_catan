@@ -1,0 +1,45 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GameServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSPB8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/GameServer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\WebGame\¿•∞‘¿”\GameServer - Bingo\DummyWnd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSPB8.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSPB9.tmp" with contents
+[
+ws2_32.lib odbc32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/GameServer.pdb" /debug /machine:I386 /out:"Debug/GameServer.exe" /pdbtype:sept 
+".\Debug\cConsol.obj"
+".\Debug\ChannelManager.obj"
+".\Debug\ClientManager.obj"
+".\Debug\DataBase.obj"
+".\Debug\DummyWnd.obj"
+".\Debug\GameServer.obj"
+".\Debug\GameServerDlg.obj"
+".\Debug\ImgButton.obj"
+".\Debug\LogDialog.obj"
+".\Debug\Message.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TrayIcon.obj"
+".\Debug\WSASocket.obj"
+".\Debug\GameServer.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSPB9.tmp"
+<h3>Output Window</h3>
+Compiling...
+DummyWnd.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+GameServer.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

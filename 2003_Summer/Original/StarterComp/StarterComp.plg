@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: StarterComp - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Debug/StarterComp.res" /d "_DEBUG" "C:\WebGame\À¥°ÔÀÓ\StarterComp\StarterComp.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP1D8.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib WinINet.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/StarterComp.pdb" /debug /machine:I386 /def:".\StarterComp.def" /out:"Debug/StarterComp.dll" /implib:"Debug/StarterComp.lib" /pdbtype:sept 
+".\Debug\StarterComp.obj"
+".\Debug\StarterCtrl.obj"
+".\Debug\StdAfx.obj"
+".\Debug\StarterComp.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP1D8.tmp"
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP1D9.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\Debug\StarterComp.dll"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP1D9.bat"
+Compiling resources...
+Linking...
+<h3>Output Window</h3>
+Performing registration
+
+
+
+<h3>Results</h3>
+StarterComp.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

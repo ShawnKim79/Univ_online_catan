@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: catan_design - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA0.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/catan_design.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\SOURCE_CODE\VISUAL C++\2003_SUMMER\catan_design\catan_designDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA0.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/catan_design.pdb" /debug /machine:I386 /out:"Debug/catan_design.exe" /pdbtype:sept  ".\Debug\catan_design.obj" ".\Debug\catan_designDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\catan_design.res" "
+<h3>Output Window</h3>
+Compiling...
+catan_designDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+catan_design.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,53 @@
+HKCR
+{
+	StarterComp.StarterCtrl.1 = s 'StarterCtrl Class'
+	{
+		CLSID = s '{BBE564F6-61BD-48D9-BEAE-97717A58C226}'
+	}
+	StarterComp.StarterCtrl = s 'StarterCtrl Class'
+	{
+		CLSID = s '{BBE564F6-61BD-48D9-BEAE-97717A58C226}'
+		CurVer = s 'StarterComp.StarterCtrl.1'
+	}
+	NoRemove CLSID
+	{
+		NoRemove 'Component Caterogies'
+		{
+			'{7DD95801-9882-11CF-9FA9-00AA006C42C4}' = s '0'
+			{
+			'800' = s 'Safe for scripting'
+			}
+			'{7DD95802-9882-11CF-9FA9-00AA006C42C4}' = s '0'
+			{
+			'800' = s 'Safe for initializing'
+			}
+		}
+
+		ForceRemove {BBE564F6-61BD-48D9-BEAE-97717A58C226} = s 'StarterCtrl Class'
+		{
+			'Implemented Categories'
+			{
+				'{7DD95801-9882-11CF-9FA9-00AA006C42C4}'
+			}
+			'Implemented Categories'
+			{
+				'{7DD95802-9882-11CF-9FA9-00AA006C42C4}'
+			}
+			ProgID = s 'StarterComp.StarterCtrl.1'
+			VersionIndependentProgID = s 'StarterComp.StarterCtrl'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{8E363DA0-140D-4843-901D-1E25AD68E5F1}'
+			'Version' = s '1.0'
+		}
+	}
+}

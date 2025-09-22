@@ -1,0 +1,94 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lobby - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Release/Lobby.res" /d "NDEBUG" "C:\WebGame\웹게임\Lobby - Omok\Lobby.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\2\RSPAE.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Lobby.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\WebGame\웹게임\Lobby - Omok\cConsol.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\ChannelDlg.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\ChatDlg.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\GameRoomDlg.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\ImgButton.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\Lobby.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\LobbyDlg.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\Message.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\MirListCtrl.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\NewRoomDlg.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\PasswdDlg.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\ProgressDlg.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\RoomManager.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\UserInfoDlg.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\UserManager.cpp"
+"C:\WebGame\웹게임\Lobby - Omok\WSASocket.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\2\RSPAE.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\2\RSPAF.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/Lobby.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\WebGame\웹게임\Lobby - Omok\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\2\RSPAF.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\2\RSPB0.tmp" with contents
+[
+ws2_32.lib omokdll.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/Lobby.pdb" /debug /machine:I386 /out:"Release/Lobby.exe" 
+".\Release\cConsol.obj"
+".\Release\ChannelDlg.obj"
+".\Release\ChatDlg.obj"
+".\Release\GameRoomDlg.obj"
+".\Release\ImgButton.obj"
+".\Release\Lobby.obj"
+".\Release\LobbyDlg.obj"
+".\Release\Message.obj"
+".\Release\MirListCtrl.obj"
+".\Release\NewRoomDlg.obj"
+".\Release\PasswdDlg.obj"
+".\Release\ProgressDlg.obj"
+".\Release\RoomManager.obj"
+".\Release\StdAfx.obj"
+".\Release\UserInfoDlg.obj"
+".\Release\UserManager.obj"
+".\Release\WSASocket.obj"
+".\Release\Lobby.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\2\RSPB0.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+cConsol.cpp
+ChannelDlg.cpp
+ChatDlg.cpp
+GameRoomDlg.cpp
+ImgButton.cpp
+Lobby.cpp
+LobbyDlg.cpp
+Message.cpp
+C:\WebGame\웹게임\Lobby - Omok\Message.cpp(34) : warning C4018: '>' : signed/unsigned mismatch
+C:\WebGame\웹게임\Lobby - Omok\Message.cpp(39) : warning C4018: '==' : signed/unsigned mismatch
+C:\WebGame\웹게임\Lobby - Omok\Message.cpp(40) : warning C4018: '>' : signed/unsigned mismatch
+MirListCtrl.cpp
+NewRoomDlg.cpp
+PasswdDlg.cpp
+ProgressDlg.cpp
+RoomManager.cpp
+UserInfoDlg.cpp
+UserManager.cpp
+WSASocket.cpp
+Generating Code...
+Linking...
+   Creating library Release/Lobby.lib and object Release/Lobby.exp
+
+
+
+<h3>Results</h3>
+Lobby.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

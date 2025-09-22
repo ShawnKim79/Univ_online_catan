@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lobby - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4B0.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/Lobby.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\source_code\Visual C++\2003_Summer\Catan_server\Lobby_Client\Lobby - Catan\ChannelDlg.cpp"
+"C:\source_code\Visual C++\2003_Summer\Catan_server\Lobby_Client\Lobby - Catan\ChatDlg.cpp"
+"C:\source_code\Visual C++\2003_Summer\Catan_server\Lobby_Client\Lobby - Catan\GameRoomDlg.cpp"
+"C:\source_code\Visual C++\2003_Summer\Catan_server\Lobby_Client\Lobby - Catan\Lobby.cpp"
+"C:\source_code\Visual C++\2003_Summer\Catan_server\Lobby_Client\Lobby - Catan\LobbyDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4B0.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4B1.tmp" with contents
+[
+ws2_32.lib BingGoDll.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Lobby.pdb" /debug /machine:I386 /out:"Debug/Lobby.exe" /pdbtype:sept 
+".\Debug\cConsol.obj"
+".\Debug\ChannelDlg.obj"
+".\Debug\ChatDlg.obj"
+".\Debug\GameRoomDlg.obj"
+".\Debug\ImgButton.obj"
+".\Debug\Lobby.obj"
+".\Debug\LobbyDlg.obj"
+".\Debug\Message.obj"
+".\Debug\MirListCtrl.obj"
+".\Debug\NewRoomDlg.obj"
+".\Debug\PasswdDlg.obj"
+".\Debug\ProgressDlg.obj"
+".\Debug\RoomManager.obj"
+".\Debug\StdAfx.obj"
+".\Debug\UserInfoDlg.obj"
+".\Debug\UserManager.obj"
+".\Debug\WSASocket.obj"
+".\Debug\Lobby.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4B1.tmp"
+<h3>Output Window</h3>
+Compiling...
+GameRoomDlg.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+ChannelDlg.cpp
+ChatDlg.cpp
+Lobby.cpp
+LobbyDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Lobby.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

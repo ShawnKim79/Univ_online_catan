@@ -1,0 +1,278 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GameServer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\GameServer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GameServer 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "GameServer 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_GAMESERVER_DIALOG DIALOGEX 0, 0, 139, 279
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "오목 서버 설정"
+FONT 9, "굴림"
+BEGIN
+    EDITTEXT        IDC_GSADDR,49,22,83,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GSPORT,49,38,42,12,ES_AUTOHSCROLL
+    CONTROL         "오목",IDC_ASOMOK,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE | WS_GROUP | WS_TABSTOP,49,56,25,8
+    CONTROL         "빙고",IDC_ASBINGO,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,80,56,26,8
+    EDITTEXT        IDC_CHANNEL,50,70,29,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,82,69,10,14
+    EDITTEXT        IDC_ROOM,50,88,29,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,82,86,10,14
+    EDITTEXT        IDC_CSADDR,49,134,83,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CSPORT,49,151,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DSN,49,195,83,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DBID,49,212,83,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DBPW,49,229,83,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "게임 서버 설정",IDC_STATIC,6,6,47,8
+    LTEXT           "서버 주소 :",IDC_STATIC,12,24,35,8
+    LTEXT           "서버 포트 :",IDC_STATIC,12,40,35,8
+    LTEXT           "서버 동작 :",IDC_STATIC,12,56,35,8,NOT WS_VISIBLE
+    LTEXT           "채널 수 :",IDC_STATIC,19,72,28,8
+    LTEXT           "방 갯수 :",IDC_STATIC,19,89,28,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,111,130,1
+    LTEXT           "채널 서버 연결 정보",IDC_STATIC,6,120,63,8
+    LTEXT           "서버 주소 :",IDC_STATIC,12,136,35,8
+    LTEXT           "서버 포트 :",IDC_STATIC,12,153,35,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,171,130,1
+    LTEXT           "DB 연결 설정",IDC_STATIC,6,181,42,8
+    LTEXT           "DSN  이름 :",IDC_STATIC,9,197,38,8
+    LTEXT           "아이디 :",IDC_STATIC,21,214,26,8
+    LTEXT           "패스워드 :",IDC_STATIC,14,231,33,8
+    LTEXT           "(1 채널 당)",IDC_STATIC,84,90,35,8
+    PUSHBUTTON      "확  인",IDC_OK,63,256,36,17
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,249,130,1
+    PUSHBUTTON      "취  소",IDC_CANCEL,99,256,36,17
+END
+
+IDD_SERVERSTATUS_DIALOG DIALOG DISCARDABLE  0, 0, 241, 229
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "서버 상태"
+FONT 10, "System"
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,2
+ PRODUCTVERSION 1,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GameServer MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 2\0"
+            VALUE "InternalName", "GameServer\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GameServer.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "GameServer 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 2\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_GAMESERVER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_SERVERSTATUS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "MENU"
+    BEGIN
+        MENUITEM "서버 시작",                   ID_STARTSERVER
+        MENUITEM "서버 중지",                   ID_STOPSERVER
+        MENUITEM SEPARATOR
+        MENUITEM "서버 설정",                   ID_SERVERCONFIG
+        MENUITEM "서버 통계",                   ID_STATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "서버 종료",                   ID_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "GameServer 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\GameServer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

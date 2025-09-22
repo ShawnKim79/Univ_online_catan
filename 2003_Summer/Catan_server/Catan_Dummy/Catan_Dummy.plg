@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Catan_Dummy - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A5.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Catan_Dummy.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\source_code\Visual C++\2003_Summer\Catan_server\Catan_Dummy\Catan_DummyDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A5.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:"Release/Catan_Dummy.pdb" /machine:I386 /out:"Release/Catan_Dummy.exe"  ".\Release\Catan_Dummy.obj" ".\Release\Catan_DummyDlg.obj" ".\Release\StdAfx.obj" ".\Release\Catan_Dummy.res" "
+<h3>Output Window</h3>
+Compiling...
+Catan_DummyDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Catan_Dummy.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

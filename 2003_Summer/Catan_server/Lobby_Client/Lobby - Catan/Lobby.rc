@@ -1,0 +1,433 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Lobby.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Lobby.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lobby 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Lobby 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_LOBBY_DIALOG DIALOGEX 0, 0, 162, 246
+STYLE WS_POPUP | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         151,IDC_CAPTION,"Static",SS_BITMAP,0,0,350,17
+    PUSHBUTTON      "_",IDC_MINIMIZE,134,4,10,9
+    PUSHBUTTON      "x",IDC_CLOSE,146,4,10,9
+    CONTROL         "",IDC_PAGEHOLDER,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,0,16,162,231
+END
+
+IDD_GAMEROOM_DIALOG DIALOG DISCARDABLE  0, 0, 350, 296
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "List1",IDC_ROOMLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,5,59,221,176
+    CONTROL         "List2",IDC_USERLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,230,59,114,176
+    CONTROL         "",IDC_VIEWCHAT,"RICHEDIT",ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_BORDER | WS_VSCROLL | WS_TABSTOP,5,
+                    236,221,41
+    EDITTEXT        IDC_CHAT,5,278,221,12,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "게임 신청",IDC_OFFERGAME,268,237,37,14
+    PUSHBUTTON      "개인 정보",IDC_PERSONALINFO,306,237,37,14
+    PUSHBUTTON      "방입장",IDC_ENTERROOM,230,237,37,14
+    PUSHBUTTON      "채널 변경",IDC_CHANGECHANNEL,266,259,38,31
+    PUSHBUTTON      "접속 종료",IDC_EXIT,306,259,38,31
+    PUSHBUTTON      "새로고침",IDC_REFRESH,183,43,43,14
+END
+
+IDD_CHANNEL_DIALOG DIALOGEX 0, 0, 162, 230
+STYLE WS_CHILD
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    CONTROL         173,IDC_STATIC,"Static",SS_BITMAP,0,0,162,34
+    CONTROL         "List1",IDC_CHANNELLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,3,34,154,
+                    173,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "새로고침",IDC_REFRESH,45,211,35,14
+    PUSHBUTTON      "채널입장",IDC_ENTERCHANNEL,82,211,35,14
+    PUSHBUTTON      "종  료",IDC_EXIT,122,211,35,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,119,212,1,14
+END
+
+IDD_PROGRESS_DIALOG DIALOGEX 0, 0, 159, 35
+STYLE DS_MODALFRAME | WS_POPUP
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    CTEXT           "Static",IDC_STATUS,26,13,128,8
+    CONTROL         133,IDC_STATIC,"Static",SS_BITMAP,8,11,15,14
+END
+
+IDD_NEWROOM_DIALOG DIALOGEX 0, 0, 131, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "방 개설"
+FONT 9, "Tahoma", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_TITLECOMBO,16,18,101,67,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "방제목",IDC_STATIC,9,7,114,31
+    GROUPBOX        "비밀방",IDC_STATIC,9,45,114,31
+    CONTROL         "비공개",IDC_LOCKED,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,16,57,31,12
+    EDITTEXT        IDC_PASSWD,60,57,57,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "만들기",IDC_OK,55,81,33,14
+    PUSHBUTTON      "취소",IDC_CANCEL,90,81,33,14
+END
+
+IDD_USERINFO_DIALOG DIALOGEX 0, 0, 147, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "접속자 정보"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_USERID,38,9,107,22,0,WS_EX_TRANSPARENT
+    LTEXT           "Static",IDC_USERNICK,38,22,107,22,0,WS_EX_TRANSPARENT
+    LTEXT           "Static",IDC_USERSCORE,38,35,107,19,0,WS_EX_TRANSPARENT
+    LTEXT           "Static",IDC_STATISTICS,38,47,107,15,0,WS_EX_TRANSPARENT
+    LTEXT           "Static",IDC_RATIO,38,59,107,11,0,WS_EX_TRANSPARENT
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,0,0,119,71
+END
+
+IDD_CHAT_DIALOG DIALOG DISCARDABLE  0, 0, 200, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Chat"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "",IDC_LITTLECHATVIEW,"RICHEDIT",ES_AUTOHSCROLL | 
+                    WS_BORDER | WS_TABSTOP,1,1,198,140
+    EDITTEXT        IDC_LITTLECHAT,1,142,182,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "게임신청",IDC_OFFERGAME,123,156,37,13,WS_DISABLED
+    PUSHBUTTON      "나가기",IDC_EXIT,162,156,37,13
+    PUSHBUTTON      "",IDC_CHGFONT,184,142,15,13
+END
+
+IDD_PASSWD_DIALOG DIALOGEX 0, 0, 135, 15
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "비밀번호 입력"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    LTEXT           "비밀번호 :",IDC_STATIC,4,4,38,8
+    EDITTEXT        IDC_PASSWD,42,2,63,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "확인",IDC_OK,106,1,28,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Lobby MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Lobby\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Lobby.EXE\0"
+            VALUE "ProductName", "Lobby 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_LOBBY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_GAMEROOM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 289
+    END
+
+    IDD_CHANNEL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_PROGRESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 28
+    END
+
+    IDD_NEWROOM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_USERINFO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 140
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_CHAT_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 199
+        VERTGUIDE, 1
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_PASSWD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 8
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PC                  BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_LOCK                BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_USERINFO            BITMAP  DISCARDABLE     "res\\userinfo.bmp"
+IDB_MINIOVER            BITMAP  DISCARDABLE     "res\\miniover.bmp"
+IDB_CLOSENOR            BITMAP  DISCARDABLE     "res\\closenormal.bmp"
+IDB_CLOSEOVER           BITMAP  DISCARDABLE     "res\\closeover.bmp"
+IDB_MINICLK             BITMAP  DISCARDABLE     "res\\miniclk.bmp"
+IDB_MININOR             BITMAP  DISCARDABLE     "res\\mininormal.bmp"
+IDB_CLOSECLK            BITMAP  DISCARDABLE     "res\\closeclk.bmp"
+IDB_CAPTION             BITMAP  DISCARDABLE     "res\\caption.bmp"
+IDB_GAMEROOM            BITMAP  DISCARDABLE     "res\\gameroom.bmp"
+IDB_ENTROOMCLK          BITMAP  DISCARDABLE     "res\\enterroomclk.bmp"
+IDB_CHGCHNNOR           BITMAP  DISCARDABLE     "res\\chgchannelnor.bmp"
+IDB_CHGCHNOVER          BITMAP  DISCARDABLE     "res\\chgchannelover.bmp"
+IDB_CHGCHNCLK           BITMAP  DISCARDABLE     "res\\chgchannelclk.bmp"
+IDB_ENTROOMNOR          BITMAP  DISCARDABLE     "res\\enterroomnor.bmp"
+IDB_ENTROOMOVER         BITMAP  DISCARDABLE     "res\\enterroomover.bmp"
+IDB_EXITCLK             BITMAP  DISCARDABLE     "res\\exitclk.bmp"
+IDB_EXITNOR             BITMAP  DISCARDABLE     "res\\exitnor.bmp"
+IDB_EXITOVER            BITMAP  DISCARDABLE     "res\\exitover.bmp"
+IDB_OFFERCLK            BITMAP  DISCARDABLE     "res\\offergameclk.bmp"
+IDB_OFFERNOR            BITMAP  DISCARDABLE     "res\\offergamenor.bmp"
+IDB_OFFEROVER           BITMAP  DISCARDABLE     "res\\offergameover.bmp"
+IDB_REFRESHCLK          BITMAP  DISCARDABLE     "res\\refreshclk.bmp"
+IDB_REFRESHNOR          BITMAP  DISCARDABLE     "res\\refreshnor.bmp"
+IDB_USERINFOOVER        BITMAP  DISCARDABLE     "res\\userinfoover.bmp"
+IDB_USERINFONOR         BITMAP  DISCARDABLE     "res\\userinfonor.bmp"
+IDB_USERINFOCLK         BITMAP  DISCARDABLE     "res\\userinfoclk.bmp"
+IDB_REFRESHOVER         BITMAP  DISCARDABLE     "res\\refreshover.bmp"
+IDB_CHANNEL             BITMAP  DISCARDABLE     "res\\channel.bmp"
+IDB_REFRESH2CLK         BITMAP  DISCARDABLE     "res\\refresh2clk.bmp"
+IDB_ENTCHNOR            BITMAP  DISCARDABLE     "res\\entchannelnor.bmp"
+IDB_ENTCHOVER           BITMAP  DISCARDABLE     "res\\entchannelover.bmp"
+IDB_EXIT2CLK            BITMAP  DISCARDABLE     "res\\exit2clk.bmp"
+IDB_EXIT2NOR            BITMAP  DISCARDABLE     "res\\exit2nor.bmp"
+IDB_EXIT2OVER           BITMAP  DISCARDABLE     "res\\exit2over.bmp"
+IDB_ENTCHCLK            BITMAP  DISCARDABLE     "res\\entchannelclk.bmp"
+IDB_REFRESH2NOR         BITMAP  DISCARDABLE     "res\\refresh2nor.bmp"
+IDB_REFRESH2OVER        BITMAP  DISCARDABLE     "res\\refresh2over.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_NEWROOM_DIALOG DLGINIT
+BEGIN
+    IDC_TITLECOMBO, 0x403, 12, 0
+0xe9b5, 0xeebe, 0xc0bf, 0xbcbc, 0xe4bf, 0x002e, 
+    IDC_TITLECOMBO, 0x403, 13, 0
+0xd1c7, 0xd7b0, 0xc720, 0xbdd5, 0xb4c3, 0x2ed9, "\000" 
+    IDC_TITLECOMBO, 0x403, 13, 0
+0xf1c1, 0xd7b0, 0xc720, 0xbdd5, 0xb4c3, 0x2ed9, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Lobby 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\Lobby.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

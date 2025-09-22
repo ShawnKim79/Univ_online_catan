@@ -1,0 +1,374 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\카탄.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\카탄.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "카탄 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "카탄 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MY_DIALOG DIALOGEX 0, 0, 187, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "서버접속 (TEST)"
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      " 카탄[서버]",IDC_SERVER_BTN,7,24,173,16
+    PUSHBUTTON      " 카탄[클라이언트)",IDC_CLIENT_BTN,101,42,79,18
+    LTEXT           "IP 입력 :",IDC_STATIC,12,50,30,10
+    EDITTEXT        IDC_IP_EDIT,43,46,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME_EDIT,39,7,141,13,ES_AUTOHSCROLL
+    LTEXT           "이름 :",IDC_STATIC,9,9,25,11
+END
+
+IDD_KATAN_PLAY DIALOGEX 0, 0, 578, 406
+STYLE WS_POPUP
+FONT 10, "굴림", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_CHAT_INPUT,399,371,140,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "대화",IDC_CHAT_BTN,542,370,21,17,0,WS_EX_CLIENTEDGE
+    CONTROL         "List1",IDC_PLAYER_INFORMATION,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,402,33,161,54
+    PUSHBUTTON      "길확장",IDC_ROAD_BTN,401,155,36,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "정착지건설",IDC_SETT_BTN,439,155,38,14,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "도시로개조",IDC_CITY_BTN,479,155,40,14,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "개발카드구매",IDC_CARD_BTN,521,155,43,14,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "상호 무역",IDC_TRADE_BTN,401,170,36,16,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "카드사용",IDC_CARD_USE_BTN,439,170,38,16,0,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "턴 종료",IDC_TURN_BTN,479,170,85,16,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "X",IDC_QUIT_BTN,545,8,10,11,NOT WS_TABSTOP,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_VIEWER,"Static",SS_BLACKFRAME | WS_DISABLED,17,18,
+                    371,372
+    CONTROL         131,IDC_CARD1,"Static",SS_BITMAP | WS_BORDER,403,88,31,
+                    50
+    CONTROL         132,IDC_CARD2,"Static",SS_BITMAP | WS_BORDER,435,88,31,
+                    50
+    CONTROL         133,IDC_CARD3,"Static",SS_BITMAP | WS_BORDER,467,88,31,
+                    50
+    CONTROL         134,IDC_CARD4,"Static",SS_BITMAP | WS_BORDER,499,88,31,
+                    50
+    CONTROL         130,IDC_CARD5,"Static",SS_BITMAP | WS_BORDER,531,88,31,
+                    50
+    LTEXT           "",IDC_CARD1_SU,404,139,29,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_RIGHT
+    LTEXT           "",IDC_CARD2_SU,436,139,29,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_RIGHT
+    LTEXT           "",IDC_CARD3_SU,468,139,29,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_RIGHT
+    LTEXT           "",IDC_CARD4_SU,500,139,29,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_RIGHT
+    LTEXT           "",IDC_CARD5_SU,532,139,29,12,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_RIGHT
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,401,226,162,143
+    CONTROL         "",IDC_EVENT_RECT,"Static",SS_BLACKFRAME,403,230,157,62
+    CONTROL         "",IDC_CHAT_RECT,"Static",SS_BLACKFRAME,403,296,157,68
+    CTEXT           "Menu",IDC_STATIC,408,8,136,11,WS_BORDER
+END
+
+IDD_DROP_DIALOG DIALOGEX 0, 0, 195, 284
+STYLE WS_POPUP
+FONT 10, "굴림", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "해당카드선택",IDC_DROP_BTN,120,258,42,16
+    LTEXT           "",IDC_CARD_N,87,259,33,15,0,WS_EX_CLIENTEDGE
+    CTEXT           "남은 선택 카드수 :",IDC_CAPTION_STATIC,21,259,66,15,0,
+                    WS_EX_DLGMODALFRAME
+END
+
+IDD_CARDSTEAL_DLG DIALOG DISCARDABLE  0, 0, 233, 335
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "특정인으로 부터 카드 하나 뺏기"
+FONT 10, "굴림"
+BEGIN
+    COMBOBOX        IDC_PLAYER,65,7,58,50,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "해당 플레이어 :",IDC_STATIC,7,7,56,9
+END
+
+IDD_SERVER_DLG DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "서버"
+FONT 10, "System"
+BEGIN
+END
+
+IDD_CARD_USE_DLG DIALOG DISCARDABLE  0, 0, 476, 326
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "개발카드 사용"
+FONT 10, "굴림"
+BEGIN
+    GROUPBOX        "카드선택",IDC_STATIC,7,7,462,297
+    PUSHBUTTON      "취소",IDC_CANCEL,7,307,462,12
+END
+
+IDD_TRAIN_DLG DIALOG DISCARDABLE  0, 0, 272, 318
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "트레이드"
+FONT 10, "굴림"
+BEGIN
+    COMBOBOX        IDC_SELECT,45,8,96,73,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "교환상대 :",IDC_STATIC,13,10,32,10
+    GROUPBOX        "원본카드",IDC_STATIC,7,97,258,90
+    GROUPBOX        "바꿀카드",IDC_STATIC,7,200,258,89
+    PUSHBUTTON      "확인",IDC_SOURCE_BTN,231,187,34,14
+    PUSHBUTTON      "확인",IDC_TARGET_BTN,195,290,34,14
+    PUSHBUTTON      "거부",IDC_CANCEL_BTN,231,290,34,14
+    PUSHBUTTON      "취소",IDC_NO_BTN,144,7,121,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "Comments", "카탄게임을 즐길수 있는 접속\0"
+            VALUE "CompanyName", "HANGARAM\0"
+            VALUE "FileDescription", "카탄 MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "The Settle Of Catan\0"
+            VALUE "LegalCopyright", "한밭대 전산동아리 HANGARAM에 있습니다\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "카탄.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "카탄접속툴\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_KATAN_PLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 571
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 399
+    END
+
+    IDD_DROP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_CARDSTEAL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+    END
+
+    IDD_SERVER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CARD_USE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 469
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+
+    IDD_TRAIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CARD5               BITMAP  DISCARDABLE     "images\\card\\cardres4.bmp"
+IDB_CARD1               BITMAP  DISCARDABLE     "images\\card\\cardres0.bmp"
+IDB_CARD2               BITMAP  DISCARDABLE     "images\\card\\cardres1.bmp"
+IDB_CARD3               BITMAP  DISCARDABLE     "images\\card\\cardres2.bmp"
+IDB_CARD4               BITMAP  DISCARDABLE     "images\\card\\cardres3.bmp"
+IDB_CARDX               BITMAP  DISCARDABLE     "images\\card\\cardresx.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "카탄 정보(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 소켓 초기화에 실패하였습니다."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\카탄.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
